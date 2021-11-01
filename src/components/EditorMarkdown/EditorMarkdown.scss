@@ -1,0 +1,68 @@
+.markdown {
+  margin-left: 30px;
+  margin-right: 30px;
+  .post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .post-title {
+      flex: 3;
+      margin-right: 10px;
+      input {
+        height: 40px;
+        border: none;
+        font-size: 20px;
+        width: 100%;
+        color: rgb(55, 54, 54);
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+    .post-label {
+      flex: 2;
+    }
+  }
+  .button-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+      padding: 10px 20px;
+      background-color: rgb(72, 185, 170);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      outline: none;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: rgb(68, 139, 130);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .markdown {
+    margin: 0px;
+    .post-top {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .markdown {
+    .post-top {
+      display: block;
+      .post-title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
